@@ -15,3 +15,4 @@ CREATE TABLE `demo`.`studenti`
     ALTER TABLE `studenti` CHANGE `email` `email` VARCHAR(250) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL;
 
     ALTER TABLE `demo`.`studenti` ADD UNIQUE `email_unic` (`email`);
+    INSERT INTO `studenti` (`id`, `nume`, `prenume`, `telefon`, `email`, `data_adaugare`) VALUES (NULL, 'Popescu', 'Dana', '072222222', 'popescu@dan.ro', current_timestamp());
